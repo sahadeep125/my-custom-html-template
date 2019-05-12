@@ -1,0 +1,355 @@
+/*
+-------------------------------------
+[Master Stylesheet]
+Author       : Deep Saha
+Template Name: Devkit creative minimal multipurpose template
+Version      : 1.0
+-------------------------------------
+*/
+
+/* RESET
+/*-------------------------------------------------*/
+
+html {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-size: .9rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    color: #555555;
+    line-height: 1.65rem;
+    position: relative;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    -webkit-font-kerning: auto;
+    font-kerning: auto;
+}
+
+body,
+input,
+textarea {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:focus,
+*:active,
+a:link,
+a:hover,
+a:visited {
+    outline: none !important;
+    outline-offset: 0;
+}
+
+a {
+    transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    -ms-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+a,
+button,
+[role="button"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    cursor: pointer;
+    -webkit-transition: all 400ms linear 0;
+    -o-transition: all 400ms linear 0;
+    -moz-transition: all 400ms linear 0;
+    transition: all 400ms linear 0;
+}
+
+select,
+button,
+[role="button"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #f7f7f7 inset;
+}
+
+input[type="search"] {
+    outline: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+mark {
+    color: #f7f7f7;
+}
+
+* {
+    border: 0;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+
+    &:hover,
+    &:focus {
+        outline: none;
+    }
+}
+
+video {
+    -moz-background-size: cover;
+    background-size: cover;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0;
+}
+
+p:last-child,
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+.h1:last-child,
+.h2:last-child,
+.h3:last-child,
+.h4:last-child,
+.h5:last-child,
+.h6:last-child {
+    margin-bottom: 0;
+}
+
+.o-hidden {
+    overflow: hidden !important;
+}
+
+.rounded-lg {
+    -webkit-border-radius: 0.5rem !important;
+    -moz-border-radius: 0.5rem !important;
+    border-radius: 0.5rem !important;
+}
+
+/*Typography
+/*-------------------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    margin-top: 0px;
+}
+
+h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 2.375rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+    line-height: 2.375rem;
+}
+
+h4 {
+    font-size: 1.375rem;
+    line-height: 1.625rem;
+}
+
+h5 {
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+}
+
+h6 {
+    font-size: 1.063rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.125rem;
+}
+
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: inherit;
+}
+
+.text {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a:hover,
+a:focus,
+a:visited {
+    text-decoration: none;
+    outline: none;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    user-drag: none;
+    -ms-interpolation-mode: bicubic;
+}
+
+img::selection,
+img::-webkit-selection,
+img::-moz-selection {
+    background: transparent;
+}
+
+.flex-auto img,
+.col-auto img {
+    max-width: none;
+}
+
+figure {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+iframe {
+    border: none;
+    width: 100%;
+}
+
+video,
+audio {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    position: relative;
+}
+
+.absolute-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .6rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+q {
+    display: inline-block;
+}
+
+pre {
+    line-height: 2rem;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    color: #9E9E9E;
+    display: block;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+
+    h6 {
+        margin: 0;
+    }
+
+    span {
+        code {
+            color: #e83e8c;
+            word-break: break-word;
+        }
+    }
+}
