@@ -8,13 +8,13 @@ var browserSync = require('browser-sync').create();
 
 function style() {
   return gulp
-    .src(['sass/plugins.scss', 'sass/style.scss'])
+    .src(['scss/plugins.scss', 'scss/style.scss'])
     .pipe(
       sass({
         outputStyle: 'compressed'
       }).on('error', sass.logError)
     )
-    .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9'))
+    .pipe(autoprefixer('last 4 version', 'safari 5', 'ie 8', 'ie 9'))
     .pipe(gulp.dest('./css'))
     .pipe(browserSync.stream());
 }

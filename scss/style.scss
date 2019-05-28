@@ -2,7 +2,7 @@
 -------------------------------------
 [Master Stylesheet]
 Author       : Deep Saha
-Template Name: Devkit creative minimal multipurpose template
+Template Name: Template creative template
 Version      : 1.0
 -------------------------------------
 */
@@ -20,17 +20,11 @@ html {
 }
 
 body {
-    font-size: .9rem;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 400;
-    color: #555555;
-    line-height: 1.65rem;
     position: relative;
     padding: 0;
     width: 100%;
     min-height: 100vh;
     overflow-x: hidden;
-    -webkit-font-kerning: auto;
     font-kerning: auto;
 }
 
@@ -38,8 +32,6 @@ body,
 input,
 textarea {
     text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 *,
@@ -54,15 +46,7 @@ a:visited {
 
 a {
     transition-timing-function: ease-in-out;
-    -ms-transition-timing-function: ease-in-out;
-    -moz-transition-timing-function: ease-in-out;
-    -webkit-transition-timing-function: ease-in-out;
-    -o-transition-timing-function: ease-in-out;
     transition-duration: .2s;
-    -ms-transition-duration: .2s;
-    -moz-transition-duration: .2s;
-    -webkit-transition-duration: .2s;
-    -o-transition-duration: .2s;
 }
 
 a:hover,
@@ -77,9 +61,6 @@ input[type="button"],
 input[type="submit"],
 input[type="reset"] {
     cursor: pointer;
-    -webkit-transition: all 400ms linear 0;
-    -o-transition: all 400ms linear 0;
-    -moz-transition: all 400ms linear 0;
     transition: all 400ms linear 0;
 }
 
@@ -89,9 +70,6 @@ button,
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
 }
 
@@ -117,8 +95,6 @@ mark {
 * {
     border: 0;
     vertical-align: baseline;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     outline: none;
 
@@ -129,7 +105,6 @@ mark {
 }
 
 video {
-    -moz-background-size: cover;
     background-size: cover;
     display: table-cell;
     vertical-align: middle;
@@ -177,8 +152,6 @@ h6:last-child,
 }
 
 .rounded-lg {
-    -webkit-border-radius: 0.5rem !important;
-    -moz-border-radius: 0.5rem !important;
     border-radius: 0.5rem !important;
 }
 
@@ -235,11 +208,6 @@ h6 a {
     color: inherit;
 }
 
-.text {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1rem;
-}
-
 b,
 strong {
     font-weight: bold;
@@ -264,12 +232,8 @@ img {
     max-width: 100%;
     height: auto;
     border: 0;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
     user-drag: none;
-    -ms-interpolation-mode: bicubic;
 }
 
 img::selection,
@@ -310,10 +274,6 @@ section {
     position: absolute;
     left: 50%;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 100%;
 }
