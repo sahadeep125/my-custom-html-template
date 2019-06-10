@@ -20,4 +20,4 @@
         jQuery('.preloader').fadeOut(1000);
 
     });
-});
+})(jQuery);
